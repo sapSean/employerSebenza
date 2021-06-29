@@ -1,0 +1,108 @@
+{
+	"Caption": "Job List",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": true,
+							"Caption": "Sort by",
+							"IsEditable": true,
+							"IsVisible": true,
+							"SortByItems": [
+								"Workers Assigned",
+								"Applications Pending",
+								"No Applications"
+							],
+							"_Name": "FormCellSorter0",
+							"_Type": "Control.Type.FormCell.Sorter"
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Visible": true,
+					"_Name": "SectionFormCell0",
+					"_Type": "Section.Type.FormCell"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"HighlightSelectedItem": false,
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"AccessoryType": "none",
+								"DetailImage": "sap-icon://dishwasher",
+								"DetailImageIsCircular": false,
+								"Footnote": "19th June",
+								"OnPress": "/DemoSebenza/Actions/Nav_JobDetail.action",
+								"PreserveIconStackSpacing": true,
+								"Selected": false,
+								"StatusText": "Status",
+								"Styles": {
+									"BackgroundColor": "MyButton"
+								},
+								"Subhead": "Cleaning ",
+								"SubstatusText": "Workers Assigned",
+								"Title": "Mario's Restaurant",
+								"Visible": true
+							}
+						},
+						{
+							"ObjectCell": {
+								"AccessoryType": "none",
+								"DetailImage": "sap-icon://shipping-status",
+								"DetailImageIsCircular": false,
+								"Footnote": "19th June",
+								"PreserveIconStackSpacing": true,
+								"Selected": false,
+								"StatusText": "Status",
+								"Styles": {
+									"BackgroundColor": "MyButton1"
+								},
+								"Subhead": "Delivery Service",
+								"SubstatusText": "Applications Pending",
+								"Title": "Mario's Restaurant",
+								"Visible": true
+							}
+						},
+						{
+							"ObjectCell": {
+								"AccessoryType": "none",
+								"DetailImage": "sap-icon://meal",
+								"DetailImageIsCircular": false,
+								"Footnote": "21st June",
+								"PreserveIconStackSpacing": true,
+								"Selected": false,
+								"StatusText": "Status",
+								"Styles": {
+									"BackgroundColor": "MyButton"
+								},
+								"Subhead": "Catering Staff",
+								"SubstatusText": "No Applications",
+								"Title": "Mario's Restaurant",
+								"Visible": true
+							}
+						}
+					],
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "List_ofJobs",
+	"_Type": "Page"
+}

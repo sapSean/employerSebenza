@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.OfflineOData.Close",
+	"Service": "/DemoSebenza/Services/demoSebenza.service",
+	"Force": true,
+	"ActionResult": {
+		"_Name": "close"
+	},
+	"OnSuccess": "/DemoSebenza/Actions/Service/CloseOfflineSuccessMessage.action",
+	"OnFailure": "/DemoSebenza/Actions/Service/CloseOfflineFailureMessage.action"
+}

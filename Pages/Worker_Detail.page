@@ -1,0 +1,127 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"Position": "right",
+				"Text": "Reject",
+				"Visible": true
+			},
+			{
+				"IsIconCircular": false,
+				"OnPress": "/DemoSebenza/Actions/MatchMessage.action",
+				"Position": "right",
+				"Text": "Offer Job",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Worker Detail ",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Description": "Worker Detail",
+						"DetailImage": "/DemoSebenza/Images/Capture.PNG",
+						"DetailImageIsCircular": false,
+						"HeadlineText": "{FirstName}",
+						"StatusText": "{EmailAddress}",
+						"Subhead": "{LastName}",
+						"SubstatusText": "{PhoneNumber}",
+						"Tags": [
+							""
+						]
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Distance ",
+							"Value": "2 Miles - BRYANSTON",
+							"Visible": true
+						},
+						{
+							"KeyName": "Rating",
+							"Value": "5/5",
+							"Visible": true
+						},
+						{
+							"KeyName": "Address",
+							"Value": "{HouseNumber} {Street}",
+							"Visible": "{Street}"
+						},
+						{
+							"KeyName": "Price Per Day",
+							"Value": "100 Rand",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Visible": true,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "City",
+							"Value": "{City}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Country ",
+							"Value": "{Country}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Visible": true,
+					"_Name": "SectionKeyValue1",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Class": "MyMapClass",
+					"Control": "MyMapExtension",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ExtensionProperties": {
+						"Prop": {
+							"City": "{City}",
+							"Country": "{Country}",
+							"HouseNumber": "{HouseNumber}",
+							"LastName": "{LastName}",
+							"PostalCode": "{PhoneNumber}",
+							"Street": "{Street}"
+						}
+					},
+					"Height": 600,
+					"Module": "MyMapModule",
+					"Visible": true,
+					"_Name": "SectionExtension0",
+					"_Type": "Section.Type.Extension"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Worker_Detail",
+	"_Type": "Page"
+}

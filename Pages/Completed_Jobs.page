@@ -1,0 +1,66 @@
+{
+	"Caption": "Completed Jobs",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"HighlightSelectedItem": false,
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"AccessoryType": "none",
+								"DetailImage": "sap-icon://meal",
+								"DetailImageIsCircular": false,
+								"Footnote": "19th June",
+								"OnPress": "/DemoSebenza/Actions/Nav_PaymentScreen.action",
+								"PreserveIconStackSpacing": true,
+								"Selected": false,
+								"StatusText": "Status",
+								"Styles": {
+									"BackgroundColor": "MyButton"
+								},
+								"Subhead": "Service",
+								"SubstatusText": "Completed - Pending Payment",
+								"Title": "Mario's Restaurant",
+								"Visible": true
+							}
+						},
+						{
+							"ObjectCell": {
+								"AccessoryType": "none",
+								"DetailImage": "sap-icon://shipping-status",
+								"DetailImageIsCircular": false,
+								"Footnote": "19th June",
+								"PreserveIconStackSpacing": true,
+								"Selected": false,
+								"StatusText": "Status",
+								"Styles": {
+									"BackgroundColor": "MyButton1"
+								},
+								"Subhead": "Delivery",
+								"SubstatusText": "Completed - Pending Payment",
+								"Title": "Mario's Restaurant",
+								"Visible": true
+							}
+						}
+					],
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Completed_Jobs",
+	"_Type": "Page"
+}

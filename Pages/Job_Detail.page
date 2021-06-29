@@ -1,0 +1,121 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/DemoSebenza/Actions/Nav_PaymentScreen.action",
+				"Position": "right",
+				"Text": "Pay",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Job Detail",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"DetailImage": "res://mdk_logo.png",
+						"DetailImageIsCircular": false,
+						"HeadlineText": "Cleanup",
+						"Subhead": "Marios Restaurant",
+						"Tags": [
+							"R100 Per Hour",
+							"2 Hour Job"
+						]
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Status",
+							"Value": "In Process",
+							"Visible": true
+						},
+						{
+							"KeyName": "Workers Currently Assigned",
+							"Value": "Lerato, Sean, Adam",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Visible": true,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Controls": [
+						{
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Matching Available Workers",
+							"Value": "Offers From Workers",
+							"_Name": "FormCellTitle0",
+							"_Type": "Control.Type.FormCell.Title"
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Visible": true,
+					"_Name": "SectionFormCell1",
+					"_Type": "Section.Type.FormCell"
+				},
+				{
+					"ContactCell": {
+						"ActivityItems": [
+							{
+								"ActivityType": "Phone",
+								"ActivityValue": "{PhoneNumber}"
+							},
+							{
+								"ActivityType": "Message",
+								"ActivityValue": ""
+							}
+						],
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Description": "{Street}",
+						"DetailImage": "res://contact.png",
+						"Headline": "{FirstName} {LastName}",
+						"OnPress": "/DemoSebenza/Actions/NavToWorker_Detail.action",
+						"Subheadline": "Cleaner"
+					},
+					"DataPaging": {
+						"LoadingIndicatorText": "",
+						"PageSize": 3,
+						"ShowLoadingIndicator": false
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Target": {
+						"EntitySet": "Customers",
+						"QueryOptions": "$orderby=LastName desc",
+						"Service": "/DemoSebenza/Services/demoSebenza.service"
+					},
+					"Visible": true,
+					"_Name": "SectionContactCellTable0",
+					"_Type": "Section.Type.ContactCell"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Job_List",
+	"_Type": "Page"
+}

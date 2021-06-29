@@ -1,0 +1,132 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/DemoSebenza/Actions/CloseModalPage_Cancel.action",
+				"Position": "left",
+				"SystemItem": "Cancel",
+				"Text": "Item",
+				"Visible": true
+			},
+			{
+				"IsIconCircular": false,
+				"OnPress": "/DemoSebenza/Actions/job_creation_confirm.action",
+				"Position": "right",
+				"Text": "Save",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Create Job",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Location",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Placeholder for Google Maps",
+							"_Name": "FCCreateLocation",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Start Date & Time",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Mode": "date",
+							"Value": "Enter Date",
+							"_Name": "FCSetStartDateTime",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "Duration",
+							"IsEditable": true,
+							"IsVisible": true,
+							"MinuteInterval": 5,
+							"Unit": "H",
+							"Value": 1,
+							"_Name": "FCDuration",
+							"_Type": "Control.Type.FormCell.DurationPicker"
+						},
+						{
+							"AllowDefaultValueIfOneItem": false,
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Service Required",
+							"DataPaging": {
+								"PageSize": 50,
+								"ShowLoadingIndicator": false
+							},
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": [
+								"Cooking",
+								"Cleaning",
+								"Catering"
+							],
+							"PickerPrompt": "Please select the services you require",
+							"_Name": "FormCellListPicker1",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"AllowDefaultValueIfOneItem": true,
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Type of Wages",
+							"DataPaging": {
+								"PageSize": 50,
+								"ShowLoadingIndicator": false
+							},
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": [
+								"Fixed Pay",
+								"Hourly Pay"
+							],
+							"PickerPrompt": "Please select how you would like to pay",
+							"_Name": "FormCellListPicker0",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"Caption": "Offer Amount",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter Value (Rand)",
+							"_Name": "FCofferAmt",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Number of Employees Required",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter Value",
+							"_Name": "FormCellSimpleProperty0",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Job Description",
+							"_Name": "FormCellNote0",
+							"_Type": "Control.Type.FormCell.Note"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Name": "Enter_Job",
+	"_Type": "Page"
+}

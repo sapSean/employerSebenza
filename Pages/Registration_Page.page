@@ -1,0 +1,72 @@
+{
+	"Caption": "Registration",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Business Name",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter Here",
+							"_Name": "FormCellSimpleProperty0",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Location",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Place Holder for Google Maps",
+							"_Name": "FormCellSimpleProperty1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Email",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter E-Mail",
+							"_Name": "FormCellSimpleProperty2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Phone Number",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Phone Number",
+							"_Name": "FormCellSimpleProperty3",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Payment Details",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Place Holder",
+							"_Name": "FormCellSimpleProperty4",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"IsVisible": true,
+							"TextAlignment": "center",
+							"Title": "Add Logo",
+							"_Name": "FormCellButton1",
+							"_Type": "Control.Type.FormCell.Button"
+						},
+						{
+							"IsVisible": true,
+							"TextAlignment": "center",
+							"Title": "Save",
+							"_Name": "FormCellButton0",
+							"_Type": "Control.Type.FormCell.Button"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Name": "Registration_Page",
+	"_Type": "Page"
+}

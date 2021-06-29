@@ -1,0 +1,65 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/DemoSebenza/Actions/Confirm_Popup.action",
+				"Position": "right",
+				"Text": "Pay",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Completed & Release Worker",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Description": "300",
+						"DetailImage": "res://mdk_logo.png",
+						"DetailImageIsCircular": false,
+						"Footnote": "Rand Per Hour",
+						"HeadlineText": "Total Bill",
+						"Subhead": "Service : Cleaning",
+						"Tags": [
+							"150",
+							""
+						]
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Lerato",
+							"Value": "Cleaner",
+							"Visible": true
+						},
+						{
+							"KeyName": "Per Hour",
+							"Value": "150",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Visible": true,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "CompleteRelease_Worker",
+	"_Type": "Page"
+}

@@ -1,0 +1,94 @@
+{
+	"Caption": "Login",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Username",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Please Enter",
+							"_Name": "FormCellSimpleProperty1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Password",
+							"IsEditable": true,
+							"IsVisible": true,
+							"KeyboardType": "Password",
+							"PlaceHolder": "Please Enter",
+							"_Name": "FormCellSimpleProperty0",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"IsVisible": true,
+							"OnPress": "/DemoSebenza/Actions/NavTo_Main.action",
+							"TextAlignment": "center",
+							"Title": "Login",
+							"_Name": "FormCellButton0",
+							"_Type": "Control.Type.FormCell.Button"
+						},
+						{
+							"ButtonType": "Button",
+							"IsVisible": true,
+							"OnPress": "/DemoSebenza/Actions/Nav_Registration.action",
+							"TextAlignment": "center",
+							"Title": "Register",
+							"_Name": "FormCellButton1",
+							"_Type": "Control.Type.FormCell.Button"
+						},
+						{
+							"Caption": "Remember Login",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Value": false,
+							"_Name": "FormCellSwitch0",
+							"_Type": "Control.Type.FormCell.Switch"
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Visible": true,
+					"_Name": "SectionFormCell0",
+					"_Type": "Section.Type.FormCell"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"ToolBar": {
+		"Controls": [
+			{
+				"Caption": "Login With ",
+				"Clickable": true,
+				"Enabled": true,
+				"Visible": true,
+				"_Name": "ToolbarItem1",
+				"_Type": "Control.Type.ToolbarItem"
+			},
+			{
+				"Caption": "ToolbarItem",
+				"Clickable": true,
+				"Enabled": true,
+				"Image": "/DemoSebenza/Images/fb.png",
+				"Visible": true,
+				"_Name": "ToolbarItem0",
+				"_Type": "Control.Type.ToolbarItem"
+			},
+			{
+				"Clickable": true,
+				"Enabled": true,
+				"Image": "/DemoSebenza/Images/twitter.png",
+				"Visible": true,
+				"_Name": "ToolbarItem2",
+				"_Type": "Control.Type.ToolbarItem"
+			}
+		]
+	},
+	"_Name": "Login_Page",
+	"_Type": "Page"
+}

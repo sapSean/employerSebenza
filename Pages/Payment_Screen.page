@@ -1,0 +1,62 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/DemoSebenza/Actions/Pay_Message.action",
+				"Position": "right",
+				"Text": "Pay",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Payment",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Add Signature",
+							"IsVisible": true,
+							"ShowTimestampInImage": false,
+							"ShowUnderline": true,
+							"ShowXMark": true,
+							"WatermarkText": "",
+							"WatermarkTextMaxLines": 5,
+							"_Name": "FormCellSignatureCapture0",
+							"_Type": "Control.Type.FormCell.SignatureCapture"
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Visible": true,
+					"_Name": "SectionFormCell0",
+					"_Type": "Section.Type.FormCell"
+				},
+				{
+					"Class": "MySliderClass",
+					"Control": "MySliderExtension",
+					"EmptySection": {
+						"Caption": "Please Rate Employee",
+						"FooterVisible": false
+					},
+					"ExtensionProperties": {
+						"MaxValue": 10
+					},
+					"Height": 72,
+					"Module": "MySliderModule",
+					"OnPress": "/DemoSebenza/Actions/ShowMessage.action",
+					"Visible": true,
+					"_Name": "MyExtensionControlName",
+					"_Type": "Section.Type.Extension"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Payment_Screen",
+	"_Type": "Page"
+}

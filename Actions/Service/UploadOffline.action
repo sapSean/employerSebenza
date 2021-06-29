@@ -1,0 +1,9 @@
+{
+	"Service": "/DemoSebenza/Services/demoSebenza.service",
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnSuccess": "/DemoSebenza/Actions/Service/DownloadStartedMessage.action",
+	"OnFailure": "/DemoSebenza/Actions/Service/SyncFailureMessage.action"
+}

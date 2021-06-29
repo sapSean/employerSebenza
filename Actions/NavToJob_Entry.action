@@ -1,0 +1,5 @@
+{
+	"NavigationType": "Cross",
+	"PageToOpen": "/DemoSebenza/Pages/Enter_Job.page",
+	"_Type": "Action.Type.Navigation"
+}

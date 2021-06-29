@@ -1,0 +1,37 @@
+{
+	"Service": "/DemoSebenza/Services/demoSebenza.service",
+	"DefiningRequests": [
+	{
+		"Name": "Customers",
+		"Query": "Customers"
+	},
+	{
+		"Name": "Suppliers",
+		"Query": "Suppliers"
+	},
+	{
+		"Name": "Products",
+		"Query": "Products"
+	},
+	{
+		"Name": "SalesOrderHeaders",
+		"Query": "SalesOrderHeaders"
+	},
+	{
+		"Name": "SalesOrderItems",
+		"Query": "SalesOrderItems"
+	},
+	{
+		"Name": "PurchaseOrderItems",
+		"Query": "PurchaseOrderItems"
+	}
+],
+	"_Type": "Action.Type.ODataService.Initialize",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Downloading...",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnSuccess": "/DemoSebenza/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"OnFailure": "/DemoSebenza/Actions/Service/InitializeOfflineFailureMessage.action"
+}

@@ -1,0 +1,5 @@
+{
+	"NavigationType": "Cross",
+	"PageToOpen": "/DemoSebenza/Pages/Dispute_Page.page",
+	"_Type": "Action.Type.Navigation"
+}
