@@ -4,27 +4,68 @@
 		{
 			"Sections": [
 				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ImageCells": [
+						{
+							"ImageCell": {
+								"ImageIsCircular": false,
+								"Visible": false
+							}
+						},
+						{
+							"ImageCell": {
+								"Image": "/DemoSebenza/Images/sebenza_logo-02.jpg",
+								"ImageIsCircular": false,
+								"Visible": true
+							}
+						},
+						{
+							"ImageCell": {
+								"ImageIsCircular": false,
+								"Visible": false
+							}
+						}
+					],
+					"Layout": {
+						"LayoutType": "HorizontalFit"
+					},
+					"Visible": true,
+					"_Name": "SectionImageCollection0",
+					"_Type": "Section.Type.ImageCollection"
+				},
+				{
 					"Controls": [
 						{
-							"Caption": "Username",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "Please Enter",
+							"PlaceHolder": "Enter Username",
 							"_Name": "FormCellSimpleProperty1",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
-							"Caption": "Password",
 							"IsEditable": true,
 							"IsVisible": true,
 							"KeyboardType": "Password",
-							"PlaceHolder": "Please Enter",
+							"PlaceHolder": "Enter Password",
 							"_Name": "FormCellSimpleProperty0",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
 						{
+							"Caption": "Remember Login",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Value": false,
+							"_Name": "FormCellSwitch0",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
 							"IsVisible": true,
 							"OnPress": "/DemoSebenza/Actions/NavTo_Main.action",
+							"Styles": {
+								"Background": "MyCustomerButton"
+							},
 							"TextAlignment": "center",
 							"Title": "Login",
 							"_Name": "FormCellButton0",
@@ -34,18 +75,14 @@
 							"ButtonType": "Button",
 							"IsVisible": true,
 							"OnPress": "/DemoSebenza/Actions/Nav_Registration.action",
+							"Styles": {
+								"Background": "MyCustomerButton",
+								"Value": "MyCustomerButton"
+							},
 							"TextAlignment": "center",
 							"Title": "Register",
 							"_Name": "FormCellButton1",
 							"_Type": "Control.Type.FormCell.Button"
-						},
-						{
-							"Caption": "Remember Login",
-							"IsEditable": true,
-							"IsVisible": true,
-							"Value": false,
-							"_Name": "FormCellSwitch0",
-							"_Type": "Control.Type.FormCell.Switch"
 						}
 					],
 					"EmptySection": {

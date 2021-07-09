@@ -19,6 +19,9 @@
 						"DetailImage": "res://mdk_logo.png",
 						"DetailImageIsCircular": false,
 						"HeadlineText": "Cleanup",
+						"Styles": {
+							"ObjectHeader": "objectHeaderBackground"
+						},
 						"Subhead": "Marios Restaurant",
 						"Tags": [
 							"R100 Per Hour",

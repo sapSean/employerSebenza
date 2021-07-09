@@ -28,9 +28,29 @@
 							"Caption": "Location",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "Placeholder for Google Maps",
+							"KeyboardType": "Default",
+							"PlaceHolder": "Enter location",
 							"_Name": "FCCreateLocation",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Class": "MyMapClass",
+							"Control": "MyMapExtension",
+							"ExtensionProperties": {
+								"Prop": {
+									"City": "{City}",
+									"Country": "{Country}",
+									"HouseNumber": "{HouseNumber}",
+									"LastName": "{LastName}",
+									"PostalCode": "{PostalCode}",
+									"Street": "{Street}"
+								}
+							},
+							"Height": 400,
+							"IsVisible": true,
+							"Module": "MyMapModule",
+							"_Name": "FormCellExtension0",
+							"_Type": "Control.Type.FormCell.Extension"
 						},
 						{
 							"Caption": "Start Date & Time",
@@ -108,7 +128,7 @@
 							"Caption": "Number of Employees Required",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "Enter Value",
+							"PlaceHolder": "Enter Number",
 							"_Name": "FormCellSimpleProperty0",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
