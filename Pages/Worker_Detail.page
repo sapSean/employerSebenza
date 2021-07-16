@@ -25,10 +25,6 @@
 						"Description": "Worker Detail",
 						"DetailImage": "/DemoSebenza/Images/Capture.PNG",
 						"DetailImageIsCircular": false,
-						"HeadlineText": "{FirstName}",
-						"StatusText": "{EmailAddress}",
-						"Subhead": "{LastName}",
-						"SubstatusText": "{PhoneNumber}",
 						"Tags": [
 							""
 						]
@@ -54,8 +50,7 @@
 						},
 						{
 							"KeyName": "Address",
-							"Value": "{HouseNumber} {Street}",
-							"Visible": "{Street}"
+							"Value": ""
 						},
 						{
 							"KeyName": "Price Per Day",
@@ -105,14 +100,18 @@
 						"Prop": {
 							"City": "{City}",
 							"Country": "{Country}",
-							"HouseNumber": "{HouseNumber}",
+							"HouseNumber": "{AddressType}",
 							"LastName": "{LastName}",
-							"PostalCode": "{PhoneNumber}",
+							"PostalCode": "{PostalCode}",
 							"Street": "{Street}"
 						}
 					},
 					"Height": 600,
 					"Module": "MyMapModule",
+					"Target": {
+						"EntitySet": "WorkerSet",
+						"Service": "/DemoSebenza/Services/demoSebenza.service"
+					},
 					"Visible": true,
 					"_Name": "SectionExtension0",
 					"_Type": "Section.Type.Extension"

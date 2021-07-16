@@ -1,37 +1,18 @@
 {
-	"Service": "/DemoSebenza/Services/demoSebenza.service",
-	"DefiningRequests": [
-	{
-		"Name": "Customers",
-		"Query": "Customers"
-	},
-	{
-		"Name": "Suppliers",
-		"Query": "Suppliers"
-	},
-	{
-		"Name": "Products",
-		"Query": "Products"
-	},
-	{
-		"Name": "SalesOrderHeaders",
-		"Query": "SalesOrderHeaders"
-	},
-	{
-		"Name": "SalesOrderItems",
-		"Query": "SalesOrderItems"
-	},
-	{
-		"Name": "PurchaseOrderItems",
-		"Query": "PurchaseOrderItems"
-	}
-],
-	"_Type": "Action.Type.ODataService.Initialize",
-	"ShowActivityIndicator": true,
-	"ActivityIndicatorText": "Downloading...",
 	"ActionResult": {
 		"_Name": "init"
 	},
+	"ActivityIndicatorText": "Downloading...",
+	"DefiningRequests": [
+		{
+			"AutomaticallyRetrievesStreams": false,
+			"Name": "WorkerSet",
+			"Query": "WorkerSet"
+		}
+	],
+	"OnFailure": "/DemoSebenza/Actions/Service/InitializeOfflineFailureMessage.action",
 	"OnSuccess": "/DemoSebenza/Actions/Service/InitializeOfflineSuccessMessage.action",
-	"OnFailure": "/DemoSebenza/Actions/Service/InitializeOfflineFailureMessage.action"
+	"Service": "/DemoSebenza/Services/demoSebenza.service",
+	"ShowActivityIndicator": true,
+	"_Type": "Action.Type.ODataService.Initialize"
 }
