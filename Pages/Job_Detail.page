@@ -24,8 +24,8 @@
 						},
 						"Subhead": "Marios Restaurant",
 						"Tags": [
-							"R100 Per Hour",
-							"2 Hour Job"
+							"",
+							""
 						]
 					},
 					"Visible": true,
@@ -79,7 +79,7 @@
 						"ActivityItems": [
 							{
 								"ActivityType": "Phone",
-								"ActivityValue": "{PhoneNumber}"
+								"ActivityValue": ""
 							},
 							{
 								"ActivityType": "Message",
@@ -91,11 +91,10 @@
 							],
 							"PerformFirstActionWithFullSwipe": true
 						},
-						"Description": "{Street}",
+						"Description": "{FirstName}",
 						"DetailImage": "res://contact.png",
-						"Headline": "{FirstName} {LastName}",
-						"OnPress": "/DemoSebenza/Actions/NavToWorker_Detail.action",
-						"Subheadline": "Cleaner"
+						"Headline": "{FirstName}",
+						"Subheadline": "{Skill1}"
 					},
 					"DataPaging": {
 						"LoadingIndicatorText": "",
@@ -105,9 +104,12 @@
 					"EmptySection": {
 						"FooterVisible": false
 					},
+					"Search": {
+						"Enabled": true
+					},
 					"Target": {
-						"EntitySet": "Customers",
-						"QueryOptions": "$orderby=LastName desc",
+						"EntitySet": "WorkerSet",
+						"QueryOptions": "$orderby=LastName",
 						"Service": "/DemoSebenza/Services/demoSebenza.service"
 					},
 					"Visible": true,
