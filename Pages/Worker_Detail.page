@@ -22,13 +22,16 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"Description": "Worker Detail",
+						"BodyText": "{EmailAddress}",
+						"Description": "Worker Details",
 						"DetailImage": "/DemoSebenza/Images/Capture.PNG",
 						"DetailImageIsCircular": false,
+						"Footnote": "{PhoneNumber}",
 						"HeadlineText": "{FirstName}",
-						"StatusText": "{EmailAddress}",
+						"Styles": {
+							"ObjectHeader": "objectHeaderBackground"
+						},
 						"Subhead": "{LastName}",
-						"SubstatusText": "{PhoneNumber}",
 						"Tags": [
 							""
 						]

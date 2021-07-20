@@ -9,7 +9,7 @@
 							"Caption": "Business Name",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "Enter Here",
+							"PlaceHolder": "Enter Name",
 							"_Name": "FormCellSimpleProperty0",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -17,9 +17,28 @@
 							"Caption": "Location",
 							"IsEditable": true,
 							"IsVisible": true,
-							"PlaceHolder": "Place Holder for Google Maps",
+							"PlaceHolder": "Enter Location",
 							"_Name": "FormCellSimpleProperty1",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Class": "MyMapClass",
+							"Control": "MyMapExtension",
+							"ExtensionProperties": {
+								"Prop": {
+									"City": "{City}",
+									"Country": "{Country}",
+									"HouseNumber": "{HouseNumber}",
+									"LastName": "{LastName}",
+									"PostalCode": "{PostalCode}",
+									"Street": "{Street}"
+								}
+							},
+							"Height": 400,
+							"IsVisible": true,
+							"Module": "MyMapModule",
+							"_Name": "FormCellExtension0",
+							"_Type": "Control.Type.FormCell.Extension"
 						},
 						{
 							"Caption": "Email",

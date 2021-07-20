@@ -112,6 +112,7 @@
 				"Clickable": true,
 				"Enabled": true,
 				"Image": "/DemoSebenza/Images/fb.png",
+				"ItemType": "Button",
 				"Visible": true,
 				"_Name": "ToolbarItem0",
 				"_Type": "Control.Type.ToolbarItem"
@@ -119,7 +120,8 @@
 			{
 				"Clickable": true,
 				"Enabled": true,
-				"Image": "/DemoSebenza/Images/twitter.png",
+				"Image": "/DemoSebenza/Images/icons8-twitter-30.png",
+				"ItemType": "Button",
 				"Visible": true,
 				"_Name": "ToolbarItem2",
 				"_Type": "Control.Type.ToolbarItem"
